@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Sans Font CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/myCountryStyle.css">
+
+    <title>Web Technologies 2021 Project</title>
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nvbCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#" class="navbar-brand">WEB PROJECT</a>
+        <div id="nvbCollapse" class="collapse navbar-collapse" >
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">ABOUT ME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myCountry.html">MY COUNTRY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">OUR LEGACY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">LOG IN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER SECTION -->
+
+<header id="headerSection">
+    <div class="overlay">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col my-auto">
+                    <h1 class="display-3"><span>ÜNYE</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<map name="workmap1">
+    <area shape="rect" coords="0,0,700,500" href="#history">
+</map>
+<map name="workmap2">
+    <area shape="rect" coords="0,0,700,500" href="#socialSituation">
+</map>
+<map name="workmap3">
+    <area shape="rect" coords="0,0,700,500" href="#travelPlaces">
+</map>
+<map name="workmap4">
+    <area shape="rect" coords="0,0,700,500" href="#architectural">
+</map>
+
+<!-- CAROUSEL -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 offset-0">
+            <div class="jumbotron p-5">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                        <li data-target="#carousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/HistoricalHouses.jpg" class="d-block w-100" alt="..." height="500" usemap="#workmap1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Hazelnut.jpg" class="d-block w-100" alt="..." height="500" usemap="#workmap2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/ÜnyeScaffolding.jpg" class="d-block w-100" alt="..." height="500" usemap="#workmap3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Ünye.jpg" class="d-block w-100" alt="..." height="500" usemap="#workmap4">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- NAVIGATION SECTION -->
+
+<section id="quickReferences">
+    <div class="jumbotron">
+        <div class="container mp-25">
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <p class="text-muted">QUICK REFERENCES</p>
+                    <a class="link" href="#history">HISTORY</a>
+                    <a class="link" href="#architectural">ARCHITECTURAL</a>
+                    <a class="link" href="#socialSituation">SOCIAL SITUATION</a>
+                    <a class="link" href="#travelPlaces">PLACES TO VISIT</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HISTORY SECTION -->
+
+<section id="history">
+    <header id="headerSection2">
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col my-auto">
+                        <h1 class="display-3"><span>HISTORY</span></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</section>
+
+<section id="unye">
+    <div class="jumbotron">
+        <div class="container mp-25">
+
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <img src="images/HistoricalHouses.jpg" class="img-fluid" alt="resmim" onclick="sıcra3()">
+                </div>
+
+                <div class="col-md-6">
+                    <h2 class="mb-5">ÜNYE</h2>
+                    <p> Thanks to the excavation work of Kılıç Kökten, it was understood that Ünye and its surroundings are among the oldest settlements in Anatolia and that the settlement started in prehistoric times. The known history of Unye goes back to the Hittites period. The settlement and its surroundings, which remained within the borders of Rome and Byzantine, remained under the rule of Danişmendli and Anatolian Seljuks. However, no historical remains have been identified within the district boundaries of these periods. Later, while within the borders of Trabzon Empire, Trabzon Emperor II. Ünye Castle was built by Ioannis. </p>
+                </div>
+
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <p>Ünye, after the establishment of Trabzon province in 1867, was turned into a district of the Canik sanjak of this province. According to the yearbook, which is the first yearbook of Trabzon province, only male population of Ünye was determined. Accordingly, 10.972 Muslim men, 1.501 Greek men and 1.253 Armenian men lived in Ünye district. The total number of men was 13,726 people. Looking at the population of 1896, it can be concluded that only adult males were identified at that time. In this case, the estimated population of the Ünye district is four times that of the adult male. Based on this, it can be said that the estimated population of Ünye district is 54,904 people. At that time, Fatsa, Bolaman, Karakuş and Niksar were the towns of Ünye district. However, the male population of these sub-districts was determined separately. Apart from the four sub-districts, Ünye district (central sub-district) included 71 villages. According to the provincial yearbook dated 1896, the population of Ünye district was 52,507 people. 7.4 percent of this population (3.905 people) was Greek and 7.2 percent (3.815 people) was Armenians. The Greeks living in Ünye district were affiliated to the Niksar Archbishopric, one of the four archbishops of the Metropolitan of Trabzon.
+
+                        Unye was ruled by the family of Trabzon Governor Haznedarzade Süleyman Pasha from the second Mahmut period until the declaration of the republic. Haznedarzade Süleyman Pasha had Unye built a palace. This flamboyant palace was also painted by French painters. However, as a result of a fire, the palace became unusable. Today, there are homes of family members on the walls of the Palace. </p>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="images/ÜnyeScaffolding.jpg" class="img-fluid" alt="resmim">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ARCHITECTURAL SECTION -->
+
+<section id="architectural">
+    <header id="headerSection3">
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col my-auto">
+                        <h1 class="display-3"><span>ARCHITECTURAL</span></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</section>
+
+<section id="unye">
+    <div class="jumbotron">
+        <div class="container mp-25">
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <p>
+                        Architecture in Ünye can be divided into old and new. The new one has features seen all over the country. Sites, cooperative homes, excessive concreting. Still, it is considered a relatively smooth settlement. It is seen that urbanization has spread to the coastline and the borders of the district have reached 27 km. Apartments rising along the long coastline exhibit a distorted urbanization. The part of the old Unye remaining from the Armenians and Greeks is established in an area that extends from the place known as Yalı today towards Çakırtepe. Old Ünye houses still preserve their existence in this campus, and restoration work has begun in recent years. The old unye architecture bears the traces of the Ottoman and Greek culture on the other hand. While Greek architecture is dominant in the Yalı campus, Ottoman architecture is observed in Kadılar Slope. Two-storey, wooden and stone-dominated buildings in a large courtyard definitely have a roof. The Palace Mosque, located in the heart of the city, was built in 1710 and is still in service. This mosque was worn during the Turkish War of Independence and was restored by the mayor of the time, Tokatlızade Hüseyin Efendi, in 1928 and reopened. It is a tall mosque with an elegant single minaret and does not contain a dome.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SOCIAL SITUATION SECTION -->
+
+<section id="socialSituation">
+    <header id="headerSection4">
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col my-auto">
+                        <h1 class="display-3"><span>SOCIAL SITUATION</span></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</section>
+
+<section id="unye">
+    <div class="jumbotron">
+        <div class="container mp-25">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <p>
+                        Hazelnut, which is the lifeblood of the economy, also determines the social life. It is observed that in late July and August, when the hazelnut is harvested, the district center is emptied and people go to the villages. Unye lives its liveliest period before the harvest season. With the influence of the Unye Faculty of Economics and Administrative Sciences and the Vocational School, which have been opened in recent years, the mobility of social life attracts attention.
+                    </p>
+
+                </div>
+
+                <div class="col-md-6">
+                    <img src="images/Hazelnut.jpg" class="img-fluid" alt="resmim">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PLACE TO VISIT SECTION -->
+
+<section id="travelPlaces">
+    <header id="headerSection5">
+        <div class="overlay">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col my-auto">
+                        <h1 class="display-3"><span>PLACES TO VISIT</span></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</section>
+
+<section id="unye">
+    <div class="jumbotron">
+        <div class="container mp-25">
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <p>
+                        There are many recreation areas in the district. The wooded land built on a slope overlooking the sea known as Çamlık attracts visitors throughout all four seasons. Çakırtepe, on the other hand, is located on a hill overlooking the city and especially the facilities that make the famous Ünye pita are located here. Ünye castle is an important touristic destination in the region 5 km outside the city. Uzunkum is one of the longest beaches of the Black Sea and leads the way in this area. Places known as Uzunkum, İncekum, İnciraltı, Çınarsuyu; One of the known tombs of Ozan Yunus Emre is in Ünye. Based on one of his poems, Ünye is claimed to have passed away. The Plane Tree is more than 300 years old in the city center. In recent years, there has been an increase in the number of hotels with star bearing authorization. Sheikh Yunus Tomb in Kabakçı is also important. Ünye is also very suitable for sea tourism. Çamlık is an important recreation spot. From here on, there are touristic facilities and pensions towards Terme. Especially Çınarsuyu Holiday Complex is very important in terms of tourism. Çakırtepe recreation, eating, drinking and entertainment area and the vicinity of Acısu and Asarkaya National Park are also among the natural corners of this district.
+
+                        Commercial life is very lively in Ünye. It has a connection with Samsun in the west, Ordu in the east and Tokat in the south. 60 km. Akkuş district in the south, the newly established Çaybaşı and İkizce districts have social, commercial and economic connections with Ünye. The Yazkonağı caves in the Yazkonağı district promise a future for cave tourism. Ordu Governorship initiated a study to open this place to tourism. Sea tourism is very important in Unye. Tourists from various parts of Turkey and abroad also contribute to Ünye's economy. In addition, Ünye International Culture, Art and Tourism Festival, which has been traditionally held every year since 1991, attracts local and foreign tourists.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO SECTION -->
+
+<section id="portfolio">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="images/Atakale.jpg" data-lightbox="image-1" data-title="Atakale">
+                    <div class="imageContainer">
+                        <img src="images/Atakale.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="imageText">
+                                <i class="fa fa-search-plus"></i>
+                                <h4>ATAKALE</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="images/Çakırtepe.jpg" data-lightbox="image-1" data-title="Çakırtepe">
+                    <div class="imageContainer">
+                        <img src="images/Çakırtepe.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="imageText">
+                                <i class="fa fa-search-plus"></i>
+                                <h4>ÇAKIRTEPE</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="images/Çamlık.jpg" data-lightbox="image-1" data-title="Çamlık">
+                    <div class="imageContainer">
+                        <img src="images/Çamlık.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="imageText">
+                                <i class="fa fa-search-plus"></i>
+                                <h4>ÇAMLIK</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="images/Çınarsuyu.jpg" data-lightbox="image-1" data-title="Çınarsuyu">
+                    <div class="imageContainer">
+                        <img src="images/Çınarsuyu.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="imageText">
+                                <i class="fa fa-search-plus"></i>
+                                <h4>ÇINARSUYU</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="images/Square.jpg" data-lightbox="image-1" data-title="Square">
+                    <div class="imageContainer">
+                        <img src="images/Square.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="imageText">
+                                <i class="fa fa-search-plus"></i>
+                                <h4>SQUARE</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="images/SheikhYunus.jpg" data-lightbox="image-1" data-title="Sheikh Yunus">
+                    <div class="imageContainer">
+                        <img src="images/SheikhYunus.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="imageText">
+                                <i class="fa fa-search-plus"></i>
+                                <h4>SHEIKH YUNUS</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="images/Uzunkum.jpg" data-lightbox="image-1" data-title="Uzunkum">
+                    <div class="imageContainer">
+                        <img src="images/Uzunkum.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="imageText">
+                                <i class="fa fa-search-plus"></i>
+                                <h4>UZUNKUM</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="images/ÜnyeCastle.jpg" data-lightbox="image-1" data-title="Ünye Castle">
+                    <div class="imageContainer">
+                        <img src="images/ÜnyeCastle.jpg" class="img-fluid">
+                        <div class="imageOverlay">
+                            <div class="imageText">
+                                <i class="fa fa-search-plus"></i>
+                                <h4>ÜNYE CASTLE</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/lightbox.js"></script>
+</body>
+</html>

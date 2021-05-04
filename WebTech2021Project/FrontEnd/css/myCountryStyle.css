@@ -1,0 +1,135 @@
+body {
+   font-family: 'Noto Sans', sans-serif; 
+    background-color: #55A4B6
+}
+.navbar {
+    border-bottom: #557334 2px solid;
+    
+}
+.navbar .navbar-brand {
+    color : #4E692F;
+    font-size: 24px;
+    
+}
+.nav-link{
+    color: #F2F2F2 !important;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+.nav-link:hover {
+    color: #4E692F !important;
+}
+.jumbotron {
+    box-shadow: 0px 20px 20px 0px #40323252
+}
+#headerSection {
+   background: url('../images/DARENDE_giris.jpg') no-repeat center center fixed;
+    background-size: cover; 
+    height: 40vh;
+}
+#headerSection .nav-link {
+    float:left;
+    text-align: center;
+    
+}
+#quickReferences .link {
+    text-align: center;
+    padding: 6%;
+    color:firebrick
+}
+#quickReferences .text-muted {
+    text-align: center;
+    padding-bottom: 50px;
+   
+}
+#headerSection2 {
+   background: url('../images/janko-ferlic-sfL_QOnmy00-unsplash.jpg') no-repeat center center fixed;
+    background-size: 1600px; 
+    height: 40vh;
+}
+#headerSection3 {
+   background: url('../images/usgs-Knh_5u-ZhJw-unsplash.jpg') no-repeat center center fixed;
+    background-size: 1600px;  
+    height: 40vh;
+}
+#headerSection4 {
+   background: url('../images/mi-pham-FtZL0r4DZYk-unsplash.jpg') no-repeat center center fixed;
+    background-size: 1600px;  
+    height: 40vh;
+}
+#headerSection5 {
+   background: url('../images/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg') no-repeat center center fixed;
+    background-size: 1600px; 
+    height: 40vh;
+}
+#headerSection .overlay {
+    background-color: rgba(0,0,0,.5)
+}
+#headerSection .row{
+    height: 40vh;
+}
+#headerSection2 .row{
+    height: 40vh;
+}
+#headerSection3 .row{
+    height: 40vh;
+}
+#headerSection4 .row{
+    height: 40vh;
+}
+#headerSection5 .row{
+    height: 40vh;
+}
+#headerSection5{
+    top: 0;
+}
+#headerSection h1 {
+    color: #F2F2F2;
+}
+#portfolio .col-md-3{
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    
+}
+#portfolio h4{
+    font-size: 16px;
+    font-weight: 300;
+}
+#portfolio .fa{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.imageContainer {
+    position: relative;
+    cursor: pointer;
+}
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.imageContainer:hover .imageOverlay {
+    opacity: 0.5;
+}
+.imageText {
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.jumbotron {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    
+}
