@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <!-- Sans Font CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/contactUsStyle.css">
+
+  <title>Web Technologies 2021 Project</title>
+
+  <script type="text/javascript">
+    function formControl(){
+      var name = document.getElementById("name").value;
+      var surname = document.getElementById("surname").value;
+      var mail = document.getElementById("mail").value;
+      var cellphone = document.getElementById("cellphone").value;
+      var message = document.getElementById("message").value;
+      var device1 = document.getElementById("device1");
+      var device2 = document.getElementById("device2");
+      var device3 = document.getElementById("device3");
+      var team1 = document.getElementById("team1");
+      var team2 = document.getElementById("team2");
+      var team3 = document.getElementById("team3");
+      var team4 = document.getElementById("team4");
+      var sportTeam = document.getElementById("sportTeam");
+      var birthDate = document.getElementById("birthDate").value;
+      var mailControl = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,10})(.[a-z]{2,8})$/;
+      var nameControl = /^([a-zA-Z]+)$/;
+      var cellphoneControl = /^0([0-9]{10})$/;
+      var control1 = new Boolean(true);
+      var control2 = new Boolean(true);
+      var control3 = new Boolean(true);
+      var control4 = new Boolean(true);
+      var control5 = new Boolean(true);
+      var control6 = new Boolean(true);
+      var control7 = new Boolean(true);
+      var control8 = new Boolean(true);
+
+      if(mailControl.test(mail))
+      {
+
+      }
+      else {
+        document.getElementById("lbltext").innerHTML="invalid mail";
+        document.getElementById("lbltext").style.visibility="visible";
+        document.getElementById("lbltext").style.color="red";
+        control1 = false;
+
+      }
+
+      if (name == "" || name == null || name.length < 2 || nameControl.test(name)==false){
+        control2 = false;
+        document.getElementById("lbltext").innerHTML="invalid name";
+        document.getElementById("lbltext").style.color="red";
+      }
+      if (surname == "" || surname == null || surname.length < 2 || nameControl.test(surname)==false){
+        control3 = false;
+        document.getElementById("lbltext").innerHTML="invalid surname";
+        document.getElementById("lbltext").style.color="red";
+      }
+      if (message == "" || message == null ){
+        control4 = false;
+        document.getElementById("lbltext").innerHTML="message can not be empty";
+        document.getElementById("lbltext").style.color="red";
+      }
+      if (cellphoneControl.test(cellphone)==false){
+        control5 = false;
+        document.getElementById("lbltext").innerHTML="invalid phone number must be 11 digits, with 0 at the beginning";
+        document.getElementById("lbltext").style.color="red";
+      }
+      if(device1.checked == false && device2.checked == false && device3.checked == false){
+        control6 = false;
+        document.getElementById("lbltext").innerHTML="at least 1 device must be chosen";
+        document.getElementById("lbltext").style.color="red";
+      }
+      if(team1.checked == false && team2.checked == false && team3.checked == false && team4.checked == false) {
+        control7 = false;
+        document.getElementById("lbltext").innerHTML="team must be chosen";
+        document.getElementById("lbltext").style.color="red";
+      }
+      if(team1.checked == true){
+        document.getElementById("sportTeam").innerHTML="Galatasaray";
+      }
+      if(team2.checked == true){
+        document.getElementById("sportTeam").innerHTML="Fenerbahçe";
+      }
+      if(team3.checked == true){
+        document.getElementById("sportTeam").innerHTML="Beşiktaş";
+      }
+      if(team4.checked == true){
+        document.getElementById("sportTeam").innerHTML="Other";
+      }
+      if(birthDate=="" || birthDate == null){
+        control8 = false;
+        document.getElementById("lbltext").innerHTML="birth date must be filled";
+        document.getElementById("lbltext").style.color="red";
+      }
+
+      if(control1 && control2 && control3 && control4 && control5 && control6 && control7 && control8){
+        document.contactUsForm.action = "php/contactUs.php";
+        document.contactUsForm.submit();
+      }
+
+    }
+
+  </script>
+</head>
+<body>
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nvbCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="#" class="navbar-brand">WEB PROJECT</a>
+    <div id="nvbCollapse" class="collapse navbar-collapse" >
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">ABOUT ME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="myCountry.html">MY COUNTRY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ourLegacy.html">OUR LEGACY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="CV.html">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">MY INTERESTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="LogIn.html">LOG IN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ContactUs.html">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<header id="headerSection">
+  <div class="overlay">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col my-auto">
+          <h1 class="display-3"><span>CONTACT US</span></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<section id="form" class="py-5">
+  <div class="jumbotron">
+    <div class="container mp-25">
+      <form name="contactUsForm" id="contactUsForm" method="post" onsubmit="return false">
+
+        <div class="row">
+          <div class="col-lg-6 my-auto">
+
+            <div class="form-group">
+
+              <div id="error"></div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-12 my-auto">
+
+            <div class="form-group">
+              <div class="input-group input-group-lg ">
+                <label for="Name" class="col-form-label" >Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="Name" name="Name"><br>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 my-auto">
+
+            <div class="form-group">
+              <div class="input-group input-group-lg ">
+                <label for="Surname" class="col-form-label">Surname :&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="Surname" name="Surname"><br>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 my-auto">
+
+            <div class="form-group">
+              <div class="input-group input-group-lg ">
+                <label for="Name" class="col-form-label">Gender&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+                <select id="gender" name="gender">
+                  <option value="male">male</option>
+                  <option value="female">female</option>
+
+                </select>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 my-auto">
+
+            <div class="form-group">
+              <div class="input-group input-group-lg ">
+                On which devices do you visit our site?
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 my-auto">
+
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox"  id="device1" name="device1">
+                  <label class="form-check-label" for="device1">Cellphone&nbsp;&nbsp;</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox"  id="device2" name="device2">
+                  <label class="form-check-label" for="device2">Tablet&nbsp;&nbsp;</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox"  id="device3" name="device3">
+                  <label class="form-check-label" for="device3">PC&nbsp;&nbsp;</label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-12 my-auto">
+
+            <div class="form-group">
+              <div class="input-group input-group-lg ">
+                Which team do you support?
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 my-auto">
+
+            <div class="form-group">
+              <div class="input-group input-group-lg ">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" id="team1" name="team" value="Galatasaray";>
+                  <label class="form-check-label" for="team1">Galatasaray&nbsp;&nbsp;</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" id="team2" name="team" value="Fenerbahçe";>
+                  <label class="form-check-label" for="team2">Fenerbahçe&nbsp;&nbsp;</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" id="team3" name="team" value="Beşiktaş";>
+                  <label class="form-check-label" for="team3">Beşiktaş&nbsp;&nbsp;</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" id="team4" name="team" value="Other";>
+                  <label class="form-check-label" for="team4">Other&nbsp;&nbsp;</label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 my-auto">
+
+            <div class="form-group">
+              <div class="input-group input-group-lg ">
+                <label class="col-form-label" for="birthDate">Birth Date :&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="date" id="birthDate" name="birthDate">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 my-auto">
+
+            <div class="form-group">
+              <div class="input-group input-group-lg ">
+                <label class="col-form-label" for="mail">Mail :&nbsp;&nbsp;</label>
+                <input type="mail" id="mail" name="mail">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-12 my-auto">
+
+            <div class="form-group">
+              <div class="input-group input-group-lg ">
+                <label class="col-form-label" for="cellphone">cellphone :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="tel" id="cellphone" name="cellphone" placeholder="05440000000"><br><br>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-11 my-auto">
+
+            <div class="form-group">
+              <div class="input-group input-group-lg ">
+                <label for="message">Message :&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <textarea class="form-control" id="message" name="message"></textarea>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <label id="lbltext" class="lblerr" style="color: red;"></label>
+          </div>
+        </div>
+
+        <textarea class="form-control" id="sportTeam" name="sportTeam" style="visibility: hidden"></textarea>
+
+        <div class="row">
+
+          <div class="col-md-6">
+
+            <div class="form-group">
+              <div class="input-group input-group-lg submit">
+
+                <button onclick="formControl()">Submit</button>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <div class="input-group input-group-lg clean">
+
+                <input type="reset" value="Clean">
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>

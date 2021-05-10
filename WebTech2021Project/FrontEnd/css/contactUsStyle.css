@@ -1,0 +1,67 @@
+body {
+   font-family: 'Noto Sans', sans-serif; 
+    background-color: white;
+}
+.navbar {
+    border-bottom: darkred 2px solid;
+    
+}
+.navbar .navbar-brand {
+    color : darkred;
+    font-size: 24px;
+    
+}
+.jumbotron {
+    max-width: 800px;
+    box-shadow: 20px 20px 20px 0px #40323252;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-link{
+    color: white !important;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+.nav-link:hover {
+    color: darkred !important;
+}
+.form-group #hata{
+    color: red;
+    font-size: 18px;
+    margin:auto;
+}
+#headerSection {
+   background: url('../images/iletisim.jpg') no-repeat center center fixed;
+    background-size: cover; 
+    height: 40vh;
+}
+#headerSection .overlay {
+    background-color: rgba(0,0,0,.5)
+}
+#headerSection .row{
+    height: 40vh;
+}
+#headerSection h1 {
+    color: white;
+}
+#hakkimda h2{
+    padding-left: 30px;
+    font-size: 32px;
+    font-weight: 400;
+    color: black;
+}
+.col-lg-12 {
+ 
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.gonder {
+    padding-left: 20%;
+}
+.temizle {
+    padding-right: 50%;
+    padding-left: 60%;
+}
+.lblerr {
+    padding-left: 35%;
+}
