@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Sans Font CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/logInStyle.css">
+
+    <title>Web Technologies 2021 Project</title>
+
+  <script type="text/javascript">
+    function formControl(){
+
+      var userName = document.getElementById("userName").value;
+
+      var password = document.getElementById("userPassword").value;
+
+      var userNameControl = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,10})(.[a-z]{2,8})$/;
+      var passwordControl = /^([a-zA-Z0-9\.-]+)$/;
+      var Control1 = new Boolean(true);
+      var Control2 = new Boolean(true);
+
+      if (userNameControl.test(userName)==false){
+        Control1 = false;
+        document.getElementById("lbltext").innerHTML="invalid username";
+        document.getElementById("lbltext").style.color="red";
+      }
+      if (passwordControl.test(password)==false){
+        Control2 = false;
+        document.getElementById("lbltext").innerHTML="invalid password";
+        document.getElementById("lbltext").style.color="red";
+      }
+      if(Control1 && Control2){
+        document.logInForm.action = "php/logIn.php";
+        document.logInForm.submit();
+      }
+
+    }
+
+  </script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nvbCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#" class="navbar-brand">WEB PROJECT</a>
+        <div id="nvbCollapse" class="collapse navbar-collapse" >
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">ABOUT ME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="myCountry.html">MY COUNTRY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ourLegacy.html">OUR LEGACY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CV.html">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MY INTERESTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="LogIn.html">LOG IN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<header id="headerSection">
+    <div class="overlay">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col my-auto">
+                    <h1 class="display-3"><span>LOG IN</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8 offset-2">
+            <div class="jumbotron p-5">
+                <form name="logInForm" id="logInForm" method="post" onsubmit="return false">
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Username</label>
+                        <div class="col-md-9">
+                            <input name="userName" id="userName" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label">Password</label>
+                        <div class="col-md-9">
+                            <input name="password" type="password" id="userPassword" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <label id="lbltext" class="lblerr" style="color: red;"></label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <button class="submitButton" onclick="formControl() "style="float: right;">Log In</button>
+                        </div>
+                    </div>
+
+                </form>
+                <p>Defined Username: g181210385@sakarya.edu.tr</p>
+                <p>Defined Password: 12345678</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+
+</body>
+</html>
