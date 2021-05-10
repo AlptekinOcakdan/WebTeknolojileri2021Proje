@@ -42,26 +42,6 @@ h3 {
     float:left;
     text-align: center;
 }
-#headerSection2 {
-   background: url('../images/billy-huynh-v9bnfMCyKbg-unsplash.jpg') no-repeat center center fixed;
-    background-size: 1600px; 
-    height: 40vh;
-}
-#headerSection3 {
-   background: url('../images/somuncubabakulliye.jpg') no-repeat center center ;
-    background-size: 1600px;  
-    height: 20vh;
-}
-#headerSection4 {
-   background: url('../images/mi-pham-FtZL0r4DZYk-unsplash.jpg') no-repeat center center fixed;
-    background-size: 1600px;  
-    height: 40vh;
-}
-#headerSection5 {
-   background: url('../images/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg') no-repeat center center fixed;
-    background-size: 1600px; 
-    height: 40vh;
-}
 #headerSection .overlay {
     background-color: rgba(0,0,0,.5)
 }
@@ -82,18 +62,6 @@ h3 {
     color:brown;
     border: 1px solid;
 }
-#headerSection3 .row{
-    height: 20vh;
-}
-#headerSection4 .row{
-    height: 40vh;
-}
-#headerSection5 .row{
-    height: 40vh;
-}
-#headerSection5{
-    top: 0;
-}
 #headerSection h1 {
     color: #F2F2F2;
 }
@@ -102,14 +70,6 @@ h3 {
     padding-right: 0;
     text-align: center;
     
-}
-#portfolio h4{
-    font-size: 16px;
-    font-weight: 300;
-}
-#portfolio .fa{
-    font-size: 24px;
-    margin-bottom: 20px;
 }
 .imageContainer {
     position: relative;
