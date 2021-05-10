@@ -1,9 +1,9 @@
 body {
    font-family: 'Noto Sans', sans-serif; 
-     background-color: #55A4B6
+     background-color: white;
 }
 .navbar {
-    border-bottom: #557334 2px solid;
+    border-bottom: darkred 2px solid;
     
 }
 #headerSection {
@@ -24,20 +24,20 @@ body {
     
 }
 .jumbotron .col-md-12 h3{
-    color: aqua;
+    color: darkred;
 }
 .navbar .navbar-brand {
-    color : #4E692F;
+    color : darkred;
     font-size: 24px;
     
 }
 .nav-link{
-    color: #F2F2F2 !important;
+    color: white !important;
     text-transform: uppercase;
     transition: color 0.5s ease;
 }
 .nav-link:hover {
-    color: #4E692F !important;
+    color: darkred !important;
 }
 #headerSection .overlay {
     background-color: rgba(0,0,0,.5);
@@ -47,13 +47,13 @@ body {
     height: 40vh;
 }
 #headerSection h1 {
-    color: #F2F2F2;
+    color: white;
 }
 #aboutMe h2{
     padding-left: 30px;
     font-size: 32px;
     font-weight: 400;
-    color: blue;
+    color: darkred;
 }
 #headerSection1 {
    background: url('../images/HobbiesAndSportingActivities.jpg') no-repeat center center fixed;

@@ -1,23 +1,23 @@
 body {
    font-family: 'Noto Sans', sans-serif; 
-    background-color: #55A4B6
+    background-color: white;
 }
 .navbar {
-    border-bottom: #557334 2px solid;
+    border-bottom: darkred 2px solid;
     
 }
 .navbar .navbar-brand {
-    color : #4E692F;
+    color : darkred;
     font-size: 24px;
     
 }
 .nav-link{
-    color: #F2F2F2 !important;
+    color: white !important;
     text-transform: uppercase;
     transition: color 0.5s ease;
 }
 .nav-link:hover {
-    color: #4E692F !important;
+    color: darkred !important;
 }
 .jumbotron {
     box-shadow: 0px 20px 20px 0px #40323252
@@ -84,7 +84,7 @@ body {
     top: 0;
 }
 #headerSection h1 {
-    color: #F2F2F2;
+    color: white;
 }
 #portfolio .col-md-3{
     padding-left: 0;
@@ -112,7 +112,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: aqua;
+    background-color: white;
     opacity: 0;
     transition: 0.5s ease;
 }
