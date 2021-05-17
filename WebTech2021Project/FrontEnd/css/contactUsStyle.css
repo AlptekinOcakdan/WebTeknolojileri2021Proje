@@ -25,7 +25,7 @@ body {
 .nav-link:hover {
     color: darkred !important;
 }
-.form-group #hata{
+.form-group #error{
     color: red;
     font-size: 18px;
     margin:auto;
@@ -44,21 +44,15 @@ body {
 #headerSection h1 {
     color: white;
 }
-#hakkimda h2{
-    padding-left: 30px;
-    font-size: 32px;
-    font-weight: 400;
-    color: black;
-}
 .col-lg-12 {
  
     padding-left: 25%;
     padding-right: 25%;
 }
-.gonder {
+.submit {
     padding-left: 20%;
 }
-.temizle {
+.clean {
     padding-right: 50%;
     padding-left: 60%;
 }

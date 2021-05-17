@@ -1,25 +1,14 @@
 body {
-   font-family: 'Noto Sans', sans-serif; 
+    font-family: 'Noto Sans', sans-serif;
     background-color: white;
 }
 .navbar {
     border-bottom: darkred 2px solid;
-    
+
 }
 .navbar .navbar-brand {
     color : darkred;
     font-size: 24px;
-    
-}
-h3 {
-    padding-top: 50px;
-    text-align: center;
-    font-size: 40px;
-}
-.img-center {
- display: block;
- margin-left: auto;
- margin-right: auto;
 
 }
 .nav-link{
@@ -33,20 +22,26 @@ h3 {
 .jumbotron {
     box-shadow: 0px 20px 20px 0px #40323252
 }
-#headerSection {
-   background: url('../images/ÜnyeView.jpg') no-repeat center center fixed;
-    background-size: cover; 
-    height: 40vh;
+.jumbotron {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
 }
-#headerSection .nav-link {
-    float:left;
-    text-align: center;
+#headerSection {
+    background: url('../images/ÜnyeView.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 40vh;
 }
 #headerSection .overlay {
     background-color: rgba(0,0,0,.5)
 }
 #headerSection .row{
     height: 40vh;
+}
+#headerSection h1 {
+    color: white;
 }
 #headerSection2 {
     background: url('../images/ContentReferences.jpg') no-repeat center center fixed;
@@ -66,14 +61,4 @@ h3 {
     text-decoration: none;
     color:darkred;
     border: 1px solid;
-}
-#headerSection h1 {
-    color: white;
-}
-.jumbotron {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    
 }
