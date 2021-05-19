@@ -40,7 +40,7 @@
           <a class="nav-link" href="CV.html">CV</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="MyInterests.html">MY INTERESTS</a>
+          <a class="nav-link" href="MyInterests.php">MY INTERESTS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="LogIn.html">LOG IN</a>

@@ -34,14 +34,14 @@
       var mailControl = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,10})(.[a-z]{2,8})$/;
       var nameControl = /^([a-zA-Z]+)$/;
       var cellphoneControl = /^0([0-9]{10})$/;
-      var control1 = new Boolean(true);
-      var control2 = new Boolean(true);
-      var control3 = new Boolean(true);
-      var control4 = new Boolean(true);
-      var control5 = new Boolean(true);
-      var control6 = new Boolean(true);
-      var control7 = new Boolean(true);
-      var control8 = new Boolean(true);
+      var control1 = Boolean(true);
+      var control2 = Boolean(true);
+      var control3 = Boolean(true);
+      var control4 = Boolean(true);
+      var control5 = Boolean(true);
+      var control6 = Boolean(true);
+      var control7 = Boolean(true);
+      var control8 = Boolean(true);
 
       if(mailControl.test(mail))
       {
@@ -55,49 +55,49 @@
 
       }
 
-      if (name == "" || name == null || name.length < 2 || nameControl.test(name)==false){
+      if (name === "" || name == null || name.length < 2 || nameControl.test(name)===false){
         control2 = false;
         document.getElementById("lbltext").innerHTML="invalid name";
         document.getElementById("lbltext").style.color="red";
       }
-      if (surname == "" || surname == null || surname.length < 2 || nameControl.test(surname)==false){
+      if (surname === "" || surname == null || surname.length < 2 || nameControl.test(surname)===false){
         control3 = false;
         document.getElementById("lbltext").innerHTML="invalid surname";
         document.getElementById("lbltext").style.color="red";
       }
-      if (message == "" || message == null ){
+      if (message === "" || message == null ){
         control4 = false;
         document.getElementById("lbltext").innerHTML="message can not be empty";
         document.getElementById("lbltext").style.color="red";
       }
-      if (cellphoneControl.test(cellphone)==false){
+      if (cellphoneControl.test(cellphone)===false){
         control5 = false;
         document.getElementById("lbltext").innerHTML="invalid phone number must be 11 digits, with 0 at the beginning";
         document.getElementById("lbltext").style.color="red";
       }
-      if(device1.checked == false && device2.checked == false && device3.checked == false){
+      if(device1.checked === false && device2.checked === false && device3.checked === false){
         control6 = false;
         document.getElementById("lbltext").innerHTML="at least 1 device must be chosen";
         document.getElementById("lbltext").style.color="red";
       }
-      if(team1.checked == false && team2.checked == false && team3.checked == false && team4.checked == false) {
+      if(team1.checked === false && team2.checked === false && team3.checked === false && team4.checked === false) {
         control7 = false;
         document.getElementById("lbltext").innerHTML="team must be chosen";
         document.getElementById("lbltext").style.color="red";
       }
-      if(team1.checked == true){
+      if(team1.checked === true){
         document.getElementById("sportTeam").innerHTML="Galatasaray";
       }
-      if(team2.checked == true){
+      if(team2.checked === true){
         document.getElementById("sportTeam").innerHTML="Fenerbahçe";
       }
-      if(team3.checked == true){
+      if(team3.checked === true){
         document.getElementById("sportTeam").innerHTML="Beşiktaş";
       }
-      if(team4.checked == true){
+      if(team4.checked === true){
         document.getElementById("sportTeam").innerHTML="Other";
       }
-      if(birthDate=="" || birthDate == null){
+      if(birthDate==="" || birthDate == null){
         control8 = false;
         document.getElementById("lbltext").innerHTML="birth date must be filled";
         document.getElementById("lbltext").style.color="red";
@@ -136,7 +136,7 @@
           <a class="nav-link" href="CV.html">CV</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="MyInterests.html">MY INTERESTS</a>
+          <a class="nav-link" href="MyInterests.php">MY INTERESTS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="LogIn.html">LOG IN</a>
@@ -303,7 +303,7 @@
 
             <div class="form-group">
               <div class="input-group input-group-lg ">
-                <label class="col-form-label" for="birthDate">Birth Date :&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label class="col-form-label" for="birthDate">Birth Date : </label>
                 <input type="date" id="birthDate" name="birthDate">
               </div>
             </div>

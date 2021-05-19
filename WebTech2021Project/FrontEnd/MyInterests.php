@@ -40,7 +40,7 @@
           <a class="nav-link" href="CV.html">CV</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="MyInterests.php">MY INTERESTS</a>
+          <a class="nav-link" href="MyInterests.html">MY INTERESTS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="LogIn.html">LOG IN</a>
@@ -67,35 +67,29 @@
   </div>
 </header>
 
-<!-- CONTENT REFERENCE -->
-
-<section id="contentReference">
-  <header id="headerSection2">
-    <div class="overlay">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col my-auto">
-            <p class="display-3">CONTENT REFERENCE</p>
-            <p><a class="link" href="#films">FILMS</a>
-              <a class="link" href="#computerGames">COMPUTER GAMES</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-</section>
-
 <!-- CONTENTS -->
+<?php
 
+include "php/moviedbApi.php";
+$movieInfo = moviedbApi::getMovieInfo(22);
+$movieInfo2 = moviedbApi::getMovieInfo(205596);
+
+?>
 <section id="films">
   <div class="jumbotron">
     <div class="container mp-25">
       <div class="row mt-5">
         <div class="col-md-6">
           <h2 class="mb-5">FILMS</h2>
-          <h3>Pirates of Caribbeans</h3>
-          <p>Among my interests, movies are my favorite because movies make a person watch all those lives that he cannot live. Movies are actually a great tool to live more than one life. I take quotes from the words I see while watching the movies and I dig them in a corner of my mind. For example, "man dies not by falling into a river, but by being submerged under water." This quote is from the movie Extraction.
-            My favorite genres are action, drama, fantasy, supernatural forces.</p>
+          <p>Movies are my favorite because movies make a person watch all those lives that he cannot live. Movies are actually a great tool to live more than one life. I take quotes from the words I see while watching the movies and I dig them in a corner of my mind. For example, "man dies not by falling into a river, but by being submerged under water." This quote is from the movie Extraction.
+            My favorite genres are action, drama, fantasy, supernatural forces. <br>
+          I am going to give some examples for my favorites.</p>
+            <br>
+            <h3><?=$movieInfo["title"]?></h3>
+            <p><?=$movieInfo["overview"]?></p>
+            <br>
+            <h3><?=$movieInfo2["title"]?></h3>
+            <p><?=$movieInfo2["overview"]?></p>
         </div>
         <div class="col-md-6">
           <img src="images/films.jpg" class="img-fluid" alt="myPicture">
@@ -105,22 +99,7 @@
   </div>
 </section>
 
-<section id="computerGames">
-  <div class="jumbotron">
-    <div class="container mp-25">
-      <div class="row mt-5">
-        <div class="col-md-6">
-          <h2 class="mb-5">COMPUTER GAMES</h2>
-          <p>Another of my interests is computer games. I spend most of my day playing video games. Even though I said that movies are my favorite, the reason why most of my days are spent with computer games is that I haven't encountered quality movies recently.
-            The types of games I enjoy playing the most are: MMORPG, fps, free world.</p>
-          </div>
-        <div class="col-md-6">
-          <img src="images/computerGames.jpg" class="img-fluid" alt="myPicture">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 
 <!-- Optional JavaScript -->

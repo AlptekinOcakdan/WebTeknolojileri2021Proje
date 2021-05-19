@@ -28,12 +28,12 @@
  
 
   echo "<br>";
-  echo "isminiz :".$name."<br>";
-  echo "soyisminiz :".$surname."<br>";
+  echo "name :".$name."<br>";
+  echo "surname :".$surname."<br>";
   echo "gender :".$gender."<br>";
   echo "birth date :".$birthDate."<br>";
   echo "mail :".$mail."<br>";
-  echo "teamınız :".$team."<br>";
+  echo "team :".$team."<br>";
   echo "cellphone number :".$cellphone."<br>";
   echo "message :".$message."<br>";
  
