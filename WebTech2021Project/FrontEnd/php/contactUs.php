@@ -13,16 +13,16 @@
 
 
   
-  if (empty($_POST['device1'])==false) {
-  $device1 = $_POST['device1'];
+  if (empty($_POST['Device1'])==false) {
+  $device1 = $_POST['Device1'];
   }
 
-  if (empty($_POST['device2'])==false) {
-  $device2 = $_POST['device2'];
+  if (empty($_POST['Device2'])==false) {
+  $device2 = $_POST['Device2'];
   }
 
-  if (empty($_POST['device3'])==false) {
-  $device3 = $_POST['device3'];
+  if (empty($_POST['Device3'])==false) {
+  $device3 = $_POST['Device3'];
   }
  
  

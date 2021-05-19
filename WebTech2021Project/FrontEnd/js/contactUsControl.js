@@ -9,24 +9,24 @@ const errorElement = document.getElementById('error')
 let form;
 form.addEventListener('submit',(e) => {
     let messages = []
-    if (name.value == "" || name.value == null){
+    if (name.value === "" || name.value == null){
         messages.push('name must be filled')
     }
-    if (surname.value == "" || surname.value == null){
+    if (surname.value === "" || surname.value == null){
         messages.push('surname must be filled')
     }
-    if (mail.value == "" || mail.value == null){
+    if (mail.value === "" || mail.value == null){
         messages.push('e-mail must be filled')
     }
     if(!(mail.includes("."))){
     messages.push('e-mail yanlış')  
     }
    
-    if (message.value == "" || message.value == null){
+    if (message.value === "" || message.value == null){
         messages.push('message must be written')
     }
 
-    if (cellphone.value == "" || cellphone.value == null){
+    if (cellphone.value === "" || cellphone.value == null){
         messages.push('phone number must be written')
     }
 
