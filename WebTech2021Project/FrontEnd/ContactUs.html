@@ -17,18 +17,18 @@
 
   <script type="text/javascript">
     function formControl(){
-      var name = document.getElementById("name").value;
-      var surname = document.getElementById("surname").value;
+      var name = document.getElementById("Name").value;
+      var surname = document.getElementById("Surname").value;
       var mail = document.getElementById("mail").value;
       var cellphone = document.getElementById("cellphone").value;
       var message = document.getElementById("message").value;
-      var device1 = document.getElementById("Device1");
-      var device2 = document.getElementById("Device2");
-      var device3 = document.getElementById("Device3");
-      var team1 = document.getElementById("Team1");
-      var team2 = document.getElementById("Team2");
-      var team3 = document.getElementById("Team3");
-      var team4 = document.getElementById("Team4");
+      var device1 = document.getElementById("device1");
+      var device2 = document.getElementById("device2");
+      var device3 = document.getElementById("device3");
+      var team1 = document.getElementById("team1");
+      var team2 = document.getElementById("team2");
+      var team3 = document.getElementById("team3");
+      var team4 = document.getElementById("team4");
       var sportTeam = document.getElementById("sportTeam");
       var birthDate = document.getElementById("birthDate").value;
       var mailControl = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,10})(.[a-z]{2,8})$/;
@@ -75,7 +75,7 @@
         document.getElementById("lbltext").innerHTML="invalid phone number must be 11 digits, with 0 at the beginning";
         document.getElementById("lbltext").style.color="red";
       }
-      if(device1.checked === false && device2.checked === false && device3.checked === false){
+      if(device1.checked == false && device2.checked == false && device3.checked == false){
         control6 = false;
         document.getElementById("lbltext").innerHTML="at least 1 device must be chosen";
         document.getElementById("lbltext").style.color="red";

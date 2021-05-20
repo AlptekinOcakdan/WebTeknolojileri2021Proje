@@ -19,7 +19,7 @@ form.addEventListener('submit',(e) => {
         messages.push('e-mail must be filled')
     }
     if(!(mail.includes("."))){
-    messages.push('e-mail yanlış')  
+    messages.push('e-mail is wrong')
     }
    
     if (message.value === "" || message.value == null){

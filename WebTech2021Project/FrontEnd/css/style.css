@@ -8,7 +8,7 @@ body {
 }
 #headerSection {
    background: url('../images/ÜnyeView.jpg') no-repeat center center fixed;
-    background-size: 1600px; 
+    background-size: cover;
     height: 40vh;
 }
 .jumbotron {
